@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-         echo 'Hello, welcome to winter class'
-        ?>;
+         echo 'Hello, welcome to winter class';
+        ?>
     </body>
 </html>
