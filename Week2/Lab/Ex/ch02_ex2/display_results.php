@@ -4,7 +4,8 @@
     $interest_rate = $_POST['interest_rate'];
     $years = $_POST['years'];
     $date = date('m-d-Y');
-
+   
+    
     // validate investment entry
     if ( empty($investment) ) {
         $error_message = 'Investment is a required field.'; }
@@ -20,7 +21,7 @@
         $error_message = 'Interest rate must be a valid number.'; }
     else if ( $interest_rate <= 0 || $interest_rate >15) {
         $error_message = 'Interest rate must be greater than zero and less then or equal to 15.'; }
-
+    
         
         // validate number of years entry
     if ( empty($years) ) {
@@ -29,7 +30,7 @@
         $error_message = 'years must be a valid number.'; }
     else if ( $years <= 0 || $years > 50) {
         $error_message = 'years must be greater than zero and less then or equal to 50.'; }
-
+    
         
     // set error message to empty string if no invalid entries
     else {
@@ -50,6 +51,7 @@
     $investment_f = '$'.number_format($investment, 2);
     $yearly_rate_f = $interest_rate.'%';
     $future_value_f = '$'.number_format($future_value, 2);
+   
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
